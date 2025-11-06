@@ -93,6 +93,9 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
+-- Set nvm path to install typescript related plugins
+vim.env.PATH = vim.env.HOME .. '/.nvm/versions/node/v20.15.0/bin:' .. vim.env.PATH
+
 require 'kickstart.options'
 
 require 'kickstart/keymaps'
